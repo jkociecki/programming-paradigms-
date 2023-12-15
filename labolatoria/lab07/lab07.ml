@@ -11,4 +11,12 @@ let modifiedPascalI index =
     done;
   done; 
   my_array;;
-let result = modifiedPascalI 7;;
+
+let result = modifiedPascalI 0;;
+let result = modifiedPascalI 1;;
+let result = modifiedPascalI 2;;
+let result = modifiedPascalI 3;;
+let result = modifiedPascalI 4;;
+let result = modifiedPascalI 5;;
+let result = modifiedPascalI 6;;
+let result = modifiedPascalI 7;; 
