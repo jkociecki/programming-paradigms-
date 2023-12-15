@@ -668,3 +668,23 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.lang.Thread.run(Thread.java:1589)
 [0m
+2023.12.15 19:47:15 INFO  Started: Metals version 1.2.0 in folders 'C:\OCaml64\home\Flex5IIL\ocaml_projects' for client Visual Studio Code 1.85.1.[0m
+2023.12.15 19:47:16 WARN  Build server is not auto-connectable.[0m
+2023.12.15 19:47:16 WARN  no build tool detected in workspace 'C:\OCaml64\home\Flex5IIL\ocaml_projects'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2023.12.15 19:47:24 INFO  no build target found for C:\OCaml64\home\Flex5IIL\ocaml_projects\labolatoria\lab07\lab07.sc. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2023.12.15 19:48:13 INFO  Shutting down server[0m
+2023.12.15 19:48:13 INFO  shutting down Metals[0m
+2023.12.15 19:48:13 INFO  Exiting server[0m
+2023.12.15 19:48:13 WARN  Error requesting Scala script import
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1589)
+[0m
