@@ -1,4 +1,4 @@
-let sievie n = 
+let sieve n = 
   if n < 2 then [||]
   else
     let start = Array.make (n + 1) 0 in 
@@ -25,7 +25,7 @@ let sievie n =
     done;
     result;;
 
-sievie 100;;
+sieve 100;;
 
 
 

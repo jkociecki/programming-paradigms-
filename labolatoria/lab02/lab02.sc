@@ -1,4 +1,4 @@
-def cutOut[A](list: List[A]) (a : Int) (b: Int) : List[A] = {
+def cutOut[A] (a : Int) (b: Int) (list: List[A])  : List[A] = {
   def cut_helper(list: List[A], a: Int, b: Int): List[A] =
     (list, a, b) match
       case (_, 0, -1) => Nil
@@ -13,26 +13,7 @@ def cutOut[A](list: List[A]) (a : Int) (b: Int) : List[A] = {
     case _ => cut_helper(list, a, b)
 }
 
-def cutOut15[A](list: List[A]) : List[A] = cutOut(list) (1) (5)
-
-val mylist1 = List(0,1,2,3,4,5,6,7,8,9,10)
-val mylist2 = List()
-cutOut(mylist1) (2) (5)
-cutOut(mylist1) (-2) (-5)
-cutOut(mylist1) (-1) (4)
-cutOut(mylist1) (2) (20)
-cutOut(mylist1) (5) (5)
-
-cutOut15(mylist1)
-cutOut15(mylist2)
-
-
-val listsplit = List(1,2,3,4,5,6,7,8,9)
-val listsplit1 = List(1,2,3,4,5,6,7,8,9,10,11,12,13,14)
-val listsplit2 = List(1,2)
-val listsplit3 = List(1)
-val listsplit4 = List()
-
+def cutOut15[A](list: List[A]) : List[A] = cutOut (1)(5)
 
 
 def length[A](list: List[A]): Int =
@@ -57,12 +38,6 @@ def split3inorder[A] (list: List[A]) : (List[A], List[A], List[A]) = {
   if len3 == 0 then (Nil, Nil, Nil) else s3o(list, 1, len3, 0)
 }
 
-split3inorder(listsplit)
-split3inorder(listsplit1)
-split3inorder(listsplit2)
-split3inorder(listsplit3)
-split3inorder(listsplit4)
-
 def split3inorderT[A] (list: List[A]) : (List[A], List[A], List[A]) = {
 @scala.annotation.tailrec
 def reverse_aux(list: List[A], aux: List[A]): List[A] =
@@ -82,24 +57,12 @@ val (l1, l2, l3) = s3t(list, 1, len3, 0, (Nil, Nil, Nil))
 (reverse_aux(l2, Nil), reverse_aux(l3, Nil), reverse_aux(l1, Nil))
 }
 
-split3inorderT(listsplit)
-split3inorderT(listsplit1)
-split3inorderT(listsplit2)
-split3inorderT(listsplit3)
-split3inorderT(listsplit4)
-
 def split3[A](list: List[A]) : (List[A], List[A], List[A]) =
   list match
     case x::y::z::t =>
       val (l1, l2, l3) = split3(t)
       (x::l1, y::l2, z::l3)
     case _ => (Nil, Nil, Nil)
-
-split3(listsplit)
-split3(listsplit1)
-split3(listsplit2)
-split3(listsplit3)
-split3(listsplit4)
 
 def split3tail[A](list: List[A]) : (List[A], List[A], List[A]) = {
   @scala.annotation.tailrec
@@ -110,12 +73,6 @@ def split3tail[A](list: List[A]) : (List[A], List[A], List[A]) = {
 
   split3tail_aux(list, (Nil, Nil, Nil))
 }
-split3tail(listsplit)
-split3tail(listsplit1)
-split3tail(listsplit2)
-split3tail(listsplit3)
-split3tail(listsplit4)
-
 def interleave[A](list : List[A]) (index : Int) (list2 : List[A]) : List[A] = {
 
   def interleave_help(list: List[A])(index: Int)(list2: List[A]): List[A] = {
@@ -130,31 +87,3 @@ def interleave[A](list : List[A]) (index : Int) (list2 : List[A]) : List[A] = {
   else interleave_help(list)(index)(list2)
 
 }
-
-val list1 = List(1,2,3,4,5,6,7)
-val emptylist = List()
-val list2 = List(9,9,9,9)
-val list3 = List(1,2,3,4)
-val list4 = List(777,777)
-
-interleave(list1)(2)(list2)
-interleave(list2)(0)(list3)
-interleave(list1)(1)(emptylist)
-interleave(list1)(-2)(list2)
-interleave(emptylist)(3)(list2)
-interleave(list1)(8)(list2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,27 +1,15 @@
 let cutOut list a b =
-  let rec cut_helper list a b = 
+  let rec cut_helper a b list = 
     match list, a, b with 
     | _, 0, -1 -> []
-    | h::t, 0, b -> h :: cut_helper t 0 (b-1)
-    | _::t, _,  _ -> cut_helper t (a-1) (b-1)
+    | h::t, 0, b -> h :: cut_helper 0 (b-1) t
+    | _::t, _,  _ -> cut_helper (a-1) (b-1) t
     | [], _, _ -> []
   in
   match a < 0, a < b with
-  | true, _ -> cut_helper list 0 b
+  | true, _ -> cut_helper 0 b list
   | _, false -> []
-  | _ -> cut_helper list a b;;
-
-
-  let myList1 = [0;1;2;3;4;5;6;7;8;9;10];;
-  cutOut myList1 2 5;;
-  cutOut myList1 7 9;;
-  cutOut myList1 4 4;;
-  cutOut myList1 2 12;;
-
-let cutOut27 list = cutOut list 2 7;;
-cutOut27 myList1;;
-
-
+  | _ -> cut_helper a b list;;
 
 let listsplit = [1;2;3;4;5;6;7;8;9];;
 let listpslit1 = [1;2;3;4;5;6;7;8;9;10;11;12;13;14];;
