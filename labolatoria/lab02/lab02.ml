@@ -1,4 +1,4 @@
-let cutOut list a b =
+let cutOut a b list=
   let rec cut_helper a b list = 
     match list, a, b with 
     | _, 0, -1 -> []

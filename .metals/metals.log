@@ -688,3 +688,4 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.lang.Thread.run(Thread.java:1589)
 [0m
+2023.12.17 15:58:43 INFO  Started: Metals version 1.2.0 in folders 'C:\OCaml64\home\Flex5IIL\ocaml_projects' for client Visual Studio Code 1.85.1.[0m
