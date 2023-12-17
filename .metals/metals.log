@@ -706,3 +706,121 @@ WARNING: Unmatched cancel notification for request id 23
 2023.12.17 15:58:53 INFO  time: code lens generation in 2.58s[0m
 2023.12.17 15:58:53 INFO  time: code lens generation in 2.61s[0m
 2023.12.17 16:01:07 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw06\lista06.sc[0m
+2023.12.17 20:36:53 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\lista08.java[0m
+gru 17, 2023 8:36:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-36-53-600.md
+2023.12.17 20:36:54 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/lista08.java. Output:
+[0m
+gru 17, 2023 8:36:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-36-54-205.md
+2023.12.17 20:37:13 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\Queue.java[0m
+gru 17, 2023 8:37:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-37-13-490.md
+2023.12.17 20:37:13 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/Queue.java. Output:
+[0m
+gru 17, 2023 8:37:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-37-14-050.md
+2023.12.17 20:37:21 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\FullException.java[0m
+2023.12.17 20:37:21 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/FullException.java. Output:
+[0m
+gru 17, 2023 8:37:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-37-21-356.md
+gru 17, 2023 8:37:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-37-21-883.md
+gru 17, 2023 8:37:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-37-31-523.md
+2023.12.17 20:38:02 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\EmptyException.java[0m
+2023.12.17 20:38:02 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/EmptyException.java. Output:
+[0m
+gru 17, 2023 8:38:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-02-213.md
+gru 17, 2023 8:38:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-02-725.md
+2023.12.17 20:38:08 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\MyQueue.java[0m
+2023.12.17 20:38:09 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/MyQueue.java. Output:
+[0m
+gru 17, 2023 8:38:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-09-050.md
+gru 17, 2023 8:38:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-09-551.md
+2023.12.17 20:38:18 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/MyQueue.java. Output:
+[0m
+gru 17, 2023 8:38:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-19-078.md
+2023.12.17 20:38:20 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/MyQueue.java. Output:
+[0m
+gru 17, 2023 8:38:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-20-932.md
+gru 17, 2023 8:38:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-21-638.md
+2023.12.17 20:38:21 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/MyQueue.java. Output:
+[0m
+gru 17, 2023 8:38:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-26-872.md
+2023.12.17 20:38:27 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/FullException.java. Output:
+[0m
+gru 17, 2023 8:38:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-28-032.md
+gru 17, 2023 8:38:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-33-661.md
+2023.12.17 20:38:35 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/EmptyException.java. Output:
+[0m
+gru 17, 2023 8:38:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-35-626.md
+gru 17, 2023 8:38:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-37-279.md
+2023.12.17 20:38:42 WARN  Running javac-semanticdb failed for file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/Queue.java. Output:
+[0m
+gru 17, 2023 8:38:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-43-083.md
+gru 17, 2023 8:38:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-43-265.md
+2023.12.17 20:38:45 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\Queue.java[0m
+gru 17, 2023 8:38:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-45-406.md
+2023.12.17 20:38:46 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\FullException.java[0m
+gru 17, 2023 8:38:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-46-251.md
+2023.12.17 20:38:47 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\EmptyException.java[0m
+gru 17, 2023 8:38:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-47-090.md
+2023.12.17 20:38:47 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\MyQueue.java[0m
+gru 17, 2023 8:38:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-47-927.md
+gru 17, 2023 8:38:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-48-450.md
+2023.12.17 20:38:51 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw08\MyQueue.java[0m
+gru 17, 2023 8:38:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-38-51-827.md
+gru 17, 2023 8:39:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-39-04-103.md
+gru 17, 2023 8:39:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-39-06-147.md
+gru 17, 2023 8:39:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-39-06-930.md
+gru 17, 2023 8:50:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-41-885.md
+gru 17, 2023 8:50:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-42-715.md
+gru 17, 2023 8:50:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-43-853.md
+gru 17, 2023 8:50:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-44-004.md
+gru 17, 2023 8:50:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-48-233.md
+gru 17, 2023 8:50:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-48-582.md
+gru 17, 2023 8:50:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-48-805.md
+gru 17, 2023 8:50:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-48-969.md
+gru 17, 2023 8:50:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-49-197.md
+gru 17, 2023 8:50:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-49-636.md
+gru 17, 2023 8:50:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-50-229.md
+gru 17, 2023 8:50:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-50-50-892.md
+gru 17, 2023 8:55:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\OCaml64\home\Flex5IIL\ocaml_projects\.metals\.reports\metals-full\2023-12-17\r_compiler-error_20-55-02-258.md

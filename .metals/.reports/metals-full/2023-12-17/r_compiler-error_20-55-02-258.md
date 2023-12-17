@@ -4,7 +4,7 @@ file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/Queue.java
 occurred in the presentation compiler.
 
 action parameters:
-offset: 98
+offset: 1145
 uri: file:///C:/OCaml64/home/Flex5IIL/ocaml_projects/cwiczenia/cw08/Queue.java
 text:
 ```scala
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class Queue<E> implements MyQueue<E>
 {
-    priv@@ate final ArrayList<E> queue;
+    private final ArrayList<E> queue;
     private int front = 0, rear = 0;
     public Queue(int size)
     {
@@ -63,7 +63,7 @@ public class Queue<E> implements MyQueue<E>
         return (rear + 1) % queue.size() == front;
     }
 
-    public static void main(String[] args) throws FullException, EmptyException
+    public static@@ void main(String[] args) throws FullException, EmptyException
     {
     MyQueue<String> q = new Queue<String>(3);
     q.enqueue("1");
