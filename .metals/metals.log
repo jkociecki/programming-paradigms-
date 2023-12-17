@@ -705,3 +705,4 @@ WARNING: Unmatched cancel notification for request id 23
 2023.12.17 15:58:53 INFO  time: code lens generation in 8.65s[0m
 2023.12.17 15:58:53 INFO  time: code lens generation in 2.58s[0m
 2023.12.17 15:58:53 INFO  time: code lens generation in 2.61s[0m
+2023.12.17 16:01:07 WARN  no build target for: C:\OCaml64\home\Flex5IIL\ocaml_projects\cwiczenia\cw06\lista06.sc[0m
