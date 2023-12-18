@@ -13,8 +13,8 @@ public class Queue<E> implements MyQueue<E>
         {
             queue.add(i, null);
         }
-
     }
+    
     @Override
     public void enqueue(E x) throws FullException
     {

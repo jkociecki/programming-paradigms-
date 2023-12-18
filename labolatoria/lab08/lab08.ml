@@ -1,0 +1,3 @@
+module MEMORY = struct
+  
+end
