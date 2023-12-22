@@ -15,9 +15,9 @@ struct
   let get mem index = mem.myarray.(index)
   let set mem (index, value) = mem.myarray.(index) <- value
   let dump mem = Array.to_list mem.myarray
-end
-
-module RamMachine (M : MEMORY) = 
+end;; 
+  
+module RamMachine = functor (M : MEMORY) ->
 struct
   type instruction = Load of int * int | Sum of int * int * int | Sub of int * int * int | Mul of int * int * int
   type ram_machine = { memory : M.memory; mutable instructions : instruction list }
