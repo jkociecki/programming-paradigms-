@@ -13,13 +13,13 @@ def evaluate(expression: List[Expression]) : Option[Double] = {
   def evaluate_helper(exp: List[Expression], queue: List[Expression]): Option[Double] =
       (exp, queue) match
         case ((h: Val)::te, _) => evaluate_helper(te, h::queue)
-        case ((f: Fun)::te, (x: Val) :: (y: Val) :: t) => evaluate_helper(te, Val(f.fnc(x.value, y.value)) :: t)
-        case (Sum :: te, (x: Val) :: (y: Val) :: t) => evaluate_helper(te, Val(x.value + y.value) :: t)
-        case (Diff :: te, (x: Val) :: (y: Val) :: t) => evaluate_helper(te, Val(x.value - y.value) :: t)
-        case (Prod :: te, (x: Val) :: (y: Val) :: t) => evaluate_helper(te, Val(x.value * y.value) :: t)
-        case (Div :: te, (x: Val) :: (y: Val) :: t) =>
-          if y.value == 0 then None
-          else evaluate_helper(te, Val(x.value / y.value) :: t)
+        case (Fun(f)::te, Val(x) :: Val(y) :: t) => evaluate_helper(te, Val(f(x, y)) :: t)
+        case (Sum :: te, Val(x) :: Val(y) :: t) => evaluate_helper(te, Val(x + y) :: t)
+        case (Diff :: te, Val(x) :: Val(y) :: t) => evaluate_helper(te, Val(x - y) :: t)
+        case (Prod :: te, Val(x) :: Val(y) :: t) => evaluate_helper(te, Val(x * y) :: t)
+        case (Div :: te, Val(x) :: Val(y) :: t) =>
+          if y == 0 then None
+          else evaluate_helper(te, Val(x / y) :: t)
         case (Nil, (h: Val) :: Nil) => Some(h.value)
         case _ => None
   evaluate_helper(expression, Nil)

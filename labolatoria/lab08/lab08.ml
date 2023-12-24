@@ -44,7 +44,7 @@ struct
 
         | Mul(index, x, y) ->
             (match (M.get machine.memory x, M.get machine.memory y) with 
-               (Some val1, Some val2) -> (M.set machine.memory (index, Some(val1 * val2)); machine.instructions <- rest)
+                 (Some val1, Some val2) -> (M.set machine.memory (index, Some(val1 * val2)); machine.instructions <- rest)
              | _ -> ()
             ) 
              
