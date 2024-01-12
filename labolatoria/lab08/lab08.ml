@@ -7,7 +7,6 @@ sig
   val dump : memory -> int option list
 end;;
 
-
 module ArrayMemory : MEMORY = 
 struct
   type memory = { myarray : int option array }
@@ -16,6 +15,24 @@ struct
   let set mem (index, value) = mem.myarray.(index) <- value
   let dump mem = Array.to_list mem.myarray
 end;; 
+
+module ListMemory : MEMORY = 
+struct
+  type memory = { mutable mylist : int option list } 
+  let init n = { mylist = List.init (n + 1) (fun _ -> None) }
+  let get mem index = List.nth mem.mylist index
+  let set mem (index, value) = mem.mylist <- List.mapi (fun i x -> if i = index then value else x) mem.mylist
+  let dump mem = mem.mylist 
+end;;
+
+module ListMemory2 = 
+  struct
+    type memory = { mylist : int option list ref }
+    let init n = { mylist = ref (List.init n (fun _ -> None)) }
+    let get mem index = List.nth !(mem.mylist) index
+    let set mem (index, value) = mem.mylist := List.mapi (fun i x -> if i = index then value else x) !(mem.mylist)
+    let dump mem = !(mem.mylist) 
+  end
   
 module RamMachine = functor (M : MEMORY) ->
 struct
@@ -44,7 +61,7 @@ struct
 
         | Mul(index, x, y) ->
             (match (M.get machine.memory x, M.get machine.memory y) with 
-                 (Some val1, Some val2) -> (M.set machine.memory (index, Some(val1 * val2)); machine.instructions <- rest)
+               (Some val1, Some val2) -> (M.set machine.memory (index, Some(val1 * val2)); machine.instructions <- rest)
              | _ -> ()
             ) 
              
