@@ -19,13 +19,13 @@ end;;
 module ListMemory : MEMORY = 
 struct
   type memory = { mutable mylist : int option list } 
-  let init n = { mylist = List.init (n + 1) (fun _ -> None) }
+  let init n = { mylist = List.init n (fun _ -> None) }
   let get mem index = List.nth mem.mylist index
   let set mem (index, value) = mem.mylist <- List.mapi (fun i x -> if i = index then value else x) mem.mylist
   let dump mem = mem.mylist 
 end;;
 
-module ListMemory2 = 
+module ListMemory2 : MEMORY = 
   struct
     type memory = { mylist : int option list ref }
     let init n = { mylist = ref (List.init n (fun _ -> None)) }
