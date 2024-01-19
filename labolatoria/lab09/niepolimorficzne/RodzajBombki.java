@@ -1,6 +1,6 @@
 package b;
 
-public enum RodzajBombki
+public enum Rodzaj
 {
-    MALA_KULO_BOMBKA, DUZA_KULO_BOMBKA, SOPELKO_BOMBKA, GRZYBO_BOMBKA;
+    MALA_KULA, DUZA_KULA, SOPELEK, GRZYBEK, MIESZANY;
 }
