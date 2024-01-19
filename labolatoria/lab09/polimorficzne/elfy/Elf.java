@@ -1,45 +1,48 @@
-package b;
+package a.Elfy;
+
+import a.bombki.Bombka;
 
 import java.util.LinkedList;
 
-public class Elf
+public abstract class Elf
 {
-    LinkedList<Bombka> bombki;
-    int maxBombki;
-    Elf kolegaElf;
-    String imie;
-    Rodzaj rodzajElfa;
+    protected String imie;
+    protected LinkedList<Bombka> bombki;
+    protected int maxBombki;
+    protected Elf kolegaElf;
 
-    int maxDuze;
-    int maxMale;
-    int duzeLicznik;
-    int maleLicznik;
-
-    Elf(String imie, int maxBombki, Rodzaj rodzajElfa)
+    public Elf(String imie, int maxBombki)
     {
-
-        this(imie, maxBombki, null, rodzajElfa);
+        this(imie, maxBombki, null);
     }
 
-    Elf(String imie, int maxDuze, int maxMale, Rodzaj rodzajELfa, Elf kolegaElf)
-    {
-        this.imie = imie;
-        this.maxDuze = maxDuze; this.duzeLicznik = maxDuze;
-        this.maxMale = maxMale; this.maleLicznik = maxMale;
-        this.rodzajElfa = rodzajELfa;
-        this.kolegaElf = kolegaElf;
-        bombki = new LinkedList<>();
-    }
-
-    Elf(String imie, int maxBombki, Elf kolegaElf, Rodzaj rodzajElfa)
+    public Elf(String imie, int maxBombki, Elf kolegaElf)
     {
         this.imie = imie;
         this.maxBombki = maxBombki;
         this.kolegaElf = kolegaElf;
-        this.rodzajElfa = rodzajElfa;
         bombki = new LinkedList<Bombka>();
     }
 
+    protected abstract boolean czyMoznaDodac(Bombka bombka);
+
+    public void wezBombke(Bombka bombka)
+    {
+        if(czyMoznaDodac(bombka) && bombki.size() < maxBombki)
+        {
+            bombki.add(bombka);
+            if(bombki.size() == maxBombki)
+            {
+                System.out.println(getImie() + " BIORE NOWE PUDELKO");
+                bombki = new LinkedList<Bombka>();
+            }
+        }
+        else
+        {
+            if (kolegaElf != null) kolegaElf.wezBombke(bombka);
+            else System.out.println(getImie() + " nie ma kolegi elfa " + "'upuszcza' " + bombka.toString());
+        }
+    }
     public String toString()
     {
         String result = imie + ":\n";
@@ -50,57 +53,8 @@ public class Elf
         return result;
     }
 
-    public void wezBombke(Bombka bombka)
+    public String getImie()
     {
-        if(rodzajElfa == Rodzaj.MIESZANY)
-        {
-           if(bombka.getRodzaj() == Rodzaj.MALA_KULA)
-           {
-               if(maleLicznik > 0)
-               {
-                   bombki.add(bombka);
-                   maleLicznik--;
-               }
-               else if (kolegaElf != null) kolegaElf.wezBombke(bombka);
-               else System.out.println(imie + " UPUSZCZA BOMBKE");
-           }
-           else if(bombka.getRodzaj() == Rodzaj.DUZA_KULA)
-           {
-               if (duzeLicznik > 0)
-               {
-                   bombki.add(bombka);
-                   duzeLicznik--;
-               }
-               else if (kolegaElf != null) kolegaElf.wezBombke(bombka);
-               else System.out.println(imie + " UPUSZCZA BOMBKE");
-           }
-           if(maleLicznik == 0 && duzeLicznik == 0)
-           {
-               maleLicznik = maxMale;
-               duzeLicznik = maxDuze;
-               bombki = new LinkedList<>();
-               System.out.println(imie + " BIORE NOWE PUDELKO!");
-           }
-
-        }
-        else if(bombka.getRodzaj() == rodzajElfa && bombki.size() < maxBombki)
-        {
-            bombki.add(bombka);
-            if(bombki.size() == maxBombki)
-            {
-                System.out.println(imie + " BIORE NOWE PUDELKO!");
-                bombki = new LinkedList<>();
-            }
-        }
-        else
-        {
-            if(kolegaElf != null) kolegaElf.wezBombke(bombka);
-            else System.out.println(imie + " nie ma kolegi elfa, 'UPUSZCZA' " + bombka.toString());
-        }
+        return imie;
     }
 }
-
-
-
-
-
