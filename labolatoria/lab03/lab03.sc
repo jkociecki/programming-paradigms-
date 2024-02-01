@@ -12,6 +12,8 @@ val mylist = composities(100000)
 
 mylist.length
 
+// modyfikacja - wlasny filter, wlasny map i composites z wykorzystaniem filtra
+
 def myMap[A,B](list: List[A]) (f: A => B): List[B] = list match {
   case Nil => Nil
   case hd :: tl => f(hd) :: myMap(tl) (f)
